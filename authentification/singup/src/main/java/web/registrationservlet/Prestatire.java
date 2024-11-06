@@ -34,7 +34,7 @@ public class Prestatire extends HttpServlet {
 		try {
 			
 			Class.forName("com.mysql.cj.jdbc.Driver"); 
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project?serverTimezone=Europe/Paris" , "Malek" , "38032591@malek.dz" ) ;
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project?serverTimezone=Europe/Paris" , "username" , "password" ) ;
 			PreparedStatement pst = con.prepareStatement("insert into maladie ( nom , id_symptome  ) values(?,?)");
 			pst.setString(1, maladie);
 			pst.setString(2, symptome);

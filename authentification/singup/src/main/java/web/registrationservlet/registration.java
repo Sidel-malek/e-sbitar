@@ -32,7 +32,7 @@ public class registration extends HttpServlet {
 	 Connection con =null ; 
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver"); 
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project?serverTimezone=Europe/Paris" , "Malek" , "38032591@malek.dz" ) ;
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project?serverTimezone=Europe/Paris" , "username" , "password" ) ;
 		PreparedStatement pst = con.prepareStatement("insert into users(uname , uemail , upwd , utel , role ) values(?,?,?,?,?)");
 		pst.setString(1, uname);
 		pst.setString(2, uemail);

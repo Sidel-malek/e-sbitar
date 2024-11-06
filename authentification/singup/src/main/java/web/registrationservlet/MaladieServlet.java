@@ -32,7 +32,7 @@ public class MaladieServlet extends HttpServlet {
         	
         	Class.forName("com.mysql.cj.jdbc.Driver"); 
         	
-    		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project?serverTimezone=Europe/Paris" , "Malek" , "38032591@malek.dz" ) ;
+    		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project?serverTimezone=Europe/Paris" , "...." , "...." ) ;
 
             String sql = "SELECT nom, id_symptome FROM maladie";
             PreparedStatement statement = con.prepareStatement(sql);
@@ -49,7 +49,7 @@ public class MaladieServlet extends HttpServlet {
 
             request.setAttribute("maladies", maladies);
 
-            request.getRequestDispatcher("Santé.jsp").forward(request, response);
+            request.getRequestDispatcher("Santï¿½.jsp").forward(request, response);
 
         } catch (SQLException e) {
             e.printStackTrace();
