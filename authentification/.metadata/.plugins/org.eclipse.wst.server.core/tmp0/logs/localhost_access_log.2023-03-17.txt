@@ -1,0 +1,17 @@
+127.0.0.1 - - [17/Mar/2023:21:13:28 +0100] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:41 +0100] "GET /singup/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:41 +0100] "GET /singup/login.jsp HTTP/1.1" 200 2958
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:41 +0100] "GET /singup/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 200 70815
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:41 +0100] "GET /singup/css/style.css HTTP/1.1" 200 19686
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:41 +0100] "GET /singup/js/main.js HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:41 +0100] "GET /singup/vendor/jquery/jquery.min.js HTTP/1.1" 404 727
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:41 +0100] "GET /singup/alert/dist/sweetalter.css HTTP/1.1" 404 725
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:41 +0100] "GET /singup/images/signin-image.jpg HTTP/1.1" 200 21118
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:41 +0100] "GET /singup/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff2?v=2.2.0 HTTP/1.1" 200 38384
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:13:42 +0100] "GET /favicon.ico HTTP/1.1" 404 692
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:14:41 +0100] "POST /singup/login HTTP/1.1" 200 2960
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:14:41 +0100] "GET /singup/vendor/jquery/jquery.min.js HTTP/1.1" 404 727
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:14:41 +0100] "GET /singup/alert/dist/sweetalter.css HTTP/1.1" 404 725
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:14:57 +0100] "POST /singup/login HTTP/1.1" 200 2170
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:14:57 +0100] "GET /singup/css/index-styles.css HTTP/1.1" 200 211255
+0:0:0:0:0:0:0:1 - - [17/Mar/2023:21:14:57 +0100] "GET /singup/js/scripts.js HTTP/1.1" 200 1648

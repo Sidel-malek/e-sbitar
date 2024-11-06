@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health App - Diseases and Symptoms</title>
+</head>
+<body>
+
+
+    <div class="maladie-image" id="maladie-image">
+    <a href="prestataire.jsp" class="maladie-image-link">Retour</a>
+    </div>
+    
+ <div class="maladie2-image" id="maladie2-image">
+    <a href="Santé.jsp" class="maladie-image-link">Santé</a>
+</div>
+    
+    <h1>Health App - Diseases and Symptoms</h1>
+
+    <table id="diseasesTable">
+        <thead>
+            <tr>
+                <th>Disease</th>
+                <th>Symptoms</th>
+            </tr>
+        </thead>
+        <tbody id="diseasesBody"></tbody>
+    </table>
+
+
+
+
+    <script>
+    
+    
+    
+    var userRole = "${ pageContext.request.getAttribute('role') }";
+    if ( userRole == 'Patient' ) {
+        document.getElementById("maladie-image").style.display = "none";
+    } 
+        // Sample data - diseases and symptoms
+        var diseases = [
+            { name: "Flu", symptoms: ["Fever", "Cough", "Sore throat"] },
+            { name: "Headache", symptoms: ["Head pain", "Nausea", "Sensitivity to light"] },
+            { name: "Common Cold", symptoms: ["Runny nose", "Sneezing", "Congestion"] }
+        ];
+
+        // Display diseases and symptoms in a table
+        var diseasesBody = document.getElementById("diseasesBody");
+
+        diseases.forEach(function (disease) {
+            var row = document.createElement("tr");
+
+            // Create a cell for disease name
+            var diseaseNameCell = document.createElement("td");
+            diseaseNameCell.textContent = disease.name;
+            row.appendChild(diseaseNameCell);
+
+            // Create a cell for symptoms
+            var symptomsCell = document.createElement("td");
+            var symptomsList = document.createElement("ul");
+
+            disease.symptoms.forEach(function (symptom) {
+                var symptomItem = document.createElement("li");
+                symptomItem.textContent = symptom;
+                symptomsList.appendChild(symptomItem);
+            });
+
+            symptomsCell.appendChild(symptomsList);
+            row.appendChild(symptomsCell);
+
+            diseasesBody.appendChild(row);
+        });
+    </script>
+</body>
+</html>	
+	
+				
+	
+	
+	
+

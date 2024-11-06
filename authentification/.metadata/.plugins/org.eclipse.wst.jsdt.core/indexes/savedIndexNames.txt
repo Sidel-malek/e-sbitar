@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+E:\projet devloppement\authentification\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4104230900.index
+3011016459.index
+1318969537.index
+2031430206.index
+2130356102.index
+1705771876.index
+1794276401.index

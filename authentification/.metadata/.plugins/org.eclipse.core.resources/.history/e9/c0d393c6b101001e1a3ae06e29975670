@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+<head>
+    <title>Maladies</title>
+</head>
+<body>
+    <h1>Liste des Maladies</h1>
+    <%
+List<Maladie> maladies = (List<Maladie>) request.getAttribute("maladies");
+%>
+
+<table>
+    <thead>
+        <tr>
+            <th>Disease</th>
+            <th>Symptoms</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (Maladie maladie : maladies) { %>
+            <tr>
+                <td><%= maladie.getNom() %></td>
+                <td><%= maladie.getSymptome() %></td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+
+</body>
+</html>

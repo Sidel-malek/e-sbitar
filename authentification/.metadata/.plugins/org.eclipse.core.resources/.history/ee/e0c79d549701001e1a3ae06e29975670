@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health App - Diseases and Symptoms</title>
+</head>
+<body>
+   
+    <h1>ajouter une maladie</h1>
+    
+    <div class="maladie-image">
+						
+	<a href="index.jsp" class="maladie-image-link">Retour</a>
+	
+	</div>
+    <h1>Health App - Diseases and Symptoms</h1>
+
+    <table id="diseasesTable">
+        <thead>
+            <tr>
+                <th>Disease</th>
+                <th>Symptoms</th>
+            </tr>
+        </thead>
+        <tbody id="diseasesBody"></tbody>
+    </table>
+
+    <script>
+        // Sample data - diseases and symptoms
+        var diseases = [
+            { name: "Flu", symptoms: ["Fever", "Cough", "Sore throat"] },
+            { name: "Headache", symptoms: ["Head pain", "Nausea", "Sensitivity to light"] },
+            { name: "Common Cold", symptoms: ["Runny nose", "Sneezing", "Congestion"] }
+        ];
+
+        // Display diseases and symptoms in a table
+        var diseasesBody = document.getElementById("diseasesBody");
+
+        diseases.forEach(function (disease) {
+            var row = document.createElement("tr");
+
+            // Create a cell for disease name
+            var diseaseNameCell = document.createElement("td");
+            diseaseNameCell.textContent = disease.name;
+            row.appendChild(diseaseNameCell);
+
+            // Create a cell for symptoms
+            var symptomsCell = document.createElement("td");
+            var symptomsList = document.createElement("ul");
+
+            disease.symptoms.forEach(function (symptom) {
+                var symptomItem = document.createElement("li");
+                symptomItem.textContent = symptom;
+                symptomsList.appendChild(symptomItem);
+            });
+
+            symptomsCell.appendChild(symptomsList);
+            row.appendChild(symptomsCell);
+
+            diseasesBody.appendChild(row);
+        });
+    </script>
+</body>
+</html>	
+	
+				
+	
+	
+	
+	<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="js/scripts.js"></script>
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<!-- * *                               SB Forms JS                               * *-->
+	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
